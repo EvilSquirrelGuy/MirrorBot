@@ -41,7 +41,8 @@ client.on('ready', async () => {
 client.on('messageCreate', async (message) => {
   if (message.webhookId) return
   if (!config.channels.includes(message.channel.id)) return
-  
+  if (config.ignoreSelf && message.author.id == client.user.id) return
+
   let replyEmbed = null
   let embeds = []
   let files = []
