@@ -86,6 +86,10 @@ client.on('messageCreate', async (message) => {
     })
   }
 
+  for (let embed of message.embeds.values() {
+    embeds.push(embed)
+  }
+
   for (let channel of channels) {
     if (message.channel.id != channel.id) {
       if (replyEmbed) await webhooks[channels.indexOf(channel)].send({
