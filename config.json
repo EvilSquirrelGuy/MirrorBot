@@ -1,5 +1,6 @@
 {
   "token": "PUT BOT'S TOKEN HERE",
+  "ignoreSelf": true,
   "channels": [
     "123456789012345678",
     "987654321098765432"
