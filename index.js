@@ -86,7 +86,7 @@ client.on('messageCreate', async (message) => {
     })
   }
 
-  for (let embed of message.embeds.values() {
+  for (let embed of message.embeds.values()) {
     embeds.push(embed)
   }
 
