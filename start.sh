@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # install pnpm if doesnt exist (assumes npm is installed)
-if ! command -v pnpm -v &> /dev/null; then
+if ! command -v pnpm &> /dev/null; then
   npm i -g pnpm
 fi
 # install dependencies
