@@ -5,7 +5,7 @@ if ! command -v pnpm -v &> /dev/null; then
   npm i -g pnpm
 fi
 # install dependencies
-if [ ! -d node_modules]; then
+if [ ! -d node_modules ]; then
   pnpm i
 fi
 # start bot
