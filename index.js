@@ -27,7 +27,7 @@ client.on('ready', async () => {
   for (let channel of config.channels) {
     channels.push(await client.channels.cache.get(channel))
   }
-  client.user.setPresence({status: 'dnd'})
+  client.user.setPresence({status: config.presence.status})
 
   for (let channel of channels) {
     const cw = await channel.fetchWebhooks()
